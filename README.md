@@ -43,3 +43,26 @@ Yu, D., Naik, S., Backurs, A., Gopi, S., Inan, H. A., Kamath, G., ... & Zhang, H
 > We give simpler, sparser, and faster algorithms for differentially private fine-tuning of large-scale pre-trained language models, which achieve the state-of-the-art privacy versus utility tradeoffs on many standard NLP tasks. We propose a meta-framework for this problem, inspired by the recent success of highly parameter-efficient methods for fine-tuning. Our experiments show that differentially private adaptations of these approaches outperform previous private algorithms in three important dimensions: utility, privacy, and the computational and memory cost of private training. On many commonly studied datasets, the utility of private models approaches that of non-private models. For example, on the MNLI dataset we achieve an accuracy of 87.8% using RoBERTa-Large and 83.5% using RoBERTa-Base with a privacy budget of ϵ=6.7. In comparison, absent privacy constraints, RoBERTa-Large achieves an accuracy of 90.2%. Our findings are similar for natural language generation tasks. Privately fine-tuning with DART, GPT-2-Small, GPT-2-Medium, GPT-2-Large, and GPT-2-XL achieve BLEU scores of 38.5, 42.0, 43.1, and 43.8 respectively (privacy budget of ϵ=6.8,δ= 1e-5) whereas the non-private baseline is 48.1. All our experiments suggest that larger models are better suited for private fine-tuning: while they are well known to achieve superior accuracy non-privately, we find that they also better maintain their accuracy when privacy is introduced
 > 
 > [paper](https://arxiv.org/pdf/2110.06500.pdf)
+
+
+**5. DiffAutoML: Differentiable Joint Optimization for Efficient End-to-End Automated Machine Learning**
+```
+Zhou, K., Lanqing, H. O. N. G., Zhou, F., Ru, B., Li, Z., Niki, T., & Feng, J. (2020). DiffAutoML: Differentiable Joint Optimization for Efficient End-to-End Automated Machine Learning.
+```
+> **Abstract**
+> 
+> The automated machine learning (AutoML) pipeline comprises several crucial components such as automated data augmentation (DA), neural architecture search (NAS) and hyper-parameter optimization (HPO). Although many strategies have been developed for automating each component in separation, joint optimization of these components remains challenging due to the largely increased search dimension and different input types required for each component. While conducting these components in sequence is usually adopted as a workaround, it often requires careful coordination by human experts and may lead to sub-optimal results. In parallel to this, the common practice of searching for the optimal architecture first and then retraining it before deployment in NAS often suffers from architecture performance difference in the search and retraining stages. An end-to-end solution that integrates the two stages and returns a ready-to-use model at the end of the search is desirable. In view of these, we propose a differentiable joint optimization solution for efficient end-to-end AutoML (DiffAutoML). Our method performs co-optimization of the neural architectures, training hyper-parameters and data augmentation policies in an end-to-end fashion without the need of model retraining.  Experiments show that DiffAutoML achieves state-of-the-art results on ImageNet compared with end-to-end AutoML algorithms, and achieves superior performance compared with multi-stage AutoML algorithms with higher computational efficiency.
+To the best of our knowledge, we are the first to jointly optimize automated DA, NAS and HPO in an en-to-end manner without retraining.
+> 
+> [paper](https://openreview.net/pdf?id=pQ-AoEbNYQK)
+
+**6. Bayesian Learning via Stochastic Gradient Langevin Dynamics**
+```
+Welling, M., & Teh, Y. W. (2011). Bayesian learning via stochastic gradient Langevin dynamics. In Proceedings of the 28th international conference on machine learning (ICML-11) (pp. 681-688).
+```
+> **Abstract**
+> 
+> In this paper we propose a new framework for learning from large scale datasets based on iterative learning from small mini-batches.
+By adding the right amount of noise to a standard stochastic gradient optimization algorithm we show that the iterates will converge to samples from the true posterior distribution as we anneal the stepsize. This seamless transition between optimization and Bayesian posterior sampling provides an inbuilt protection against overfitting. We also propose a practical method for Monte Carlo estimates of posterior statistics which monitors a “sampling threshold” and collects samples after it has been surpassed. We apply the method to three models: a mixture of Gaussians, logistic regression and ICA with natural gradients.
+> 
+> [paper](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.441.3813&rep=rep1&type=pdf)
