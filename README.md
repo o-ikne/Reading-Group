@@ -1,5 +1,5 @@
 # Reading-Group
-This repository contains our review slides for various papers in the field of machine learning.
+This repository contains a list of scientific articles that I presented with some of my classmates in our reading group class.
 
 ## Papers
 
